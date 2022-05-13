@@ -147,7 +147,6 @@ a:visited {
   height: 660px;
   width: 985px;
   box-sizing: border-box;
-  border: 1px dotted silver;
 }
 
 .list {
@@ -299,8 +298,13 @@ input:focus {
   margin-bottom: 40px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-.form-group {
+.form-group-FN {
   position: relative;
+  display: inline-block;
+}
+.form-group-LN {
+  position: relative;
+  display: inline-block;
 }
 .label-FirstName {
   position: relative;
@@ -319,6 +323,12 @@ input:focus {
   outline: none;
   font-size: 15px;
   color: black;
+}
+.add-post-form {
+  display: inline-block;
+  position: relative;
+  top: 150px;
+  background-color: #3b82f6;
 }
 .form-control-FN {
   width: 200px;
@@ -460,9 +470,10 @@ input:focus {
   width: 25px;
   display: inline-block;
   position: absolute;
-  right: 47px;
+  right: 220px;
   font-size: 15px;
-  bottom: 352px;
+  bottom: 130px;
+  color: RGBa(56, 66, 82, 0.6);
 }
 
 .annualContainer {
