@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="logo" onClick="location.href='/'">TIM DAYOFF</div>
+      </div>
+      <div class="header"></div>
+      <div class="content">
+        <div class="menu">
+          <div class="information">소개</div>
+          <div class="aboutMe" onClick="location.href='/aboutMe.html'">
+            + About DAYOFF
+          </div>
+          <div class="management">메뉴</div>
+          <div
+            class="employeeManagement"
+            onClick="location.href='/employeeManagement.html'"
+          >
+            + 직원관리
+          </div>
+          <div
+            class="annualManagement"
+            onClick="location.href='/annualManagement.html'"
+          >
+            + 연차관리
+          </div>
+        </div>
+        <div class="display">
+          <div class="workSpace2">
+            <div class="add">
+              <form class="add-post-form" id="inputForm">
+                <div class="form-group">
+                  <div class="label" id="firstName">성</div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="성"
+                    onclick="fontApear(firstName)"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <div class="label" id="lastName">이름</div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="이름"
+                    onclick="fontApearLN()"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <div class="label" id="position">직급</div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="position"
+                    onclick="fontApearPS()"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <div class="label">전체 연차</div>
+                  <input
+                    type="integer"
+                    class="form-control"
+                    id="annual"
+                    onclick="fontApearAN()"
+                    required
+                  />
+                  <div class="form-day">일</div>
+                </div>
+                <div class="form-group">
+                  <div class="label">연락처</div>
+                  <input
+                    type="integer"
+                    class="form-control"
+                    id="number"
+                    onclick="fontApearNU()"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <div class="label">e-mail</div>
+                  <input
+                    type="integer"
+                    class="form-control"
+                    id="email"
+                    onclick="fontApearEM()"
+                    required
+                  />
+                </div>
+
+                <div
+                  class="saveBtn"
+                  onClick="location.href='/employeeManagement.html'"
+                >
+                  저장
+                </div>
+                <div class="vertical"></div>
+                <button
+                  class="closeBtn"
+                  onClick="location.href='/employeeManagement.html'"
+                >
+                  닫기
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer"><div class="sign">Developed by 용환</div></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="logo" onClick="location.href='/'">TIM DAYOFF</div>
+      </div>
+      <div class="header"></div>
+      <div class="content">
+        <div class="menu">
+          <div class="information">소개</div>
+          <div class="aboutMe" onClick="location.href='/aboutMe.html'">
+            + About DAYOFF
+          </div>
+          <div class="management">메뉴</div>
+          <div
+            class="employeeManagement"
+            onClick="location.href='/employeeManagement.html'"
+          >
+            + 직원관리
+          </div>
+          <div
+            class="annualManagement"
+            onClick="location.href='/annualManagement.html'"
+          >
+            + 연차관리
+          </div>
+        </div>
+        <div class="display">
+          <div class="workSpace2">
+            <form class="searchEmployeeForm">
+              <div class="form-group">
+                <div class="title">직원 목록</div>
+                <input
+                  type="text"
+                  class="search"
+                  placeholder="search"
+                  required
+                />
+                <div class="searchBtn">
+                  <div class="circle"><div class="innerCircle"></div></div>
+                  <div class="stripe"></div>
+                </div>
+              </div>
+            </form>
+            <div
+              class="addEmployeePage"
+              onClick="location.href='/employeeManagement-Add.html'"
+            >
+              +
+            </div>
+            <div class="list">
+              <div
+                class="employee"
+                onClick="location.href='/employeeManagement-Edit.html'"
+              >
+                용환
+              </div>
+              <div class="employee">용환</div>
+              <div class="employee">용환</div>
+              <div class="employee">용환</div>
+              <div class="employee">용환</div>
+              <div class="employee">용환</div>
+              <div class="employee">용환</div>
+              <div class="employee">용환</div>
+              <div class="employee">용환</div>
+              <div class="employee">용환</div>
+            </div>
+          </div>
+          <div class="add">
+            <form class="add-post-form" id="inputForm">
+              <div class="form-group">
+                <div class="label">이름</div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  value="김용환"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <div class="label">직급</div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="position"
+                  value="연구원"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <div class="label">전체 연차</div>
+                <input
+                  type="integer"
+                  class="form-control"
+                  id="annual"
+                  value="12"
+                  required
+                />
+                <div class="form-day">일</div>
+              </div>
+              <div class="form-group">
+                <div class="label">연락처</div>
+                <input
+                  type="integer"
+                  class="form-control"
+                  id="annual"
+                  value="01094728073"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <div class="label">e-mail</div>
+                <input
+                  type="integer"
+                  class="form-control"
+                  id="annual"
+                  value="chocolate@gmail.com"
+                  required
+                />
+              </div>
+
+              <div
+                class="exitBtn"
+                onClick="location.href='/employeeManagement.html'"
+              >
+                닫기
+              </div>
+              <div class="vertical"></div>
+              <button
+                class="editBtn"
+                onClick="location.href='/employeeManagement.html'"
+              >
+                삭제
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer"><div class="sign">Developed by 용환</div></div>
+    </div>
+  </body>
+</html>
