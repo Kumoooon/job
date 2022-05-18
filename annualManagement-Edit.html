@@ -10,103 +10,82 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script
-      src="https://kit.fontawesome.com/4335224fc6.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>TIM DAYOFF</title>
   </head>
   <body>
     <div class="container">
       <div class="nav">
         <div class="logo" onClick="location.href='/'">TIM DAYOFF</div>
       </div>
-      <div class="header"></div>
+      <div class="header"><p id="dynamic" class="lg-text"></p></div>
       <div class="content">
         <div class="menu">
           <div class="information">소개</div>
           <div class="aboutMe" onClick="location.href='/aboutMe.html'">
-            + About DAYOFF
+            + About Me
           </div>
           <div class="management">메뉴</div>
           <div
             class="employeeManagement"
             onClick="location.href='/employeeManagement.html'"
           >
-            + 직원관리
+            + 직원 관리
           </div>
           <div
             class="annualManagement"
             onClick="location.href='/annualManagement.html'"
           >
-            + 연차관리
+            + 연차 관리
           </div>
         </div>
         <div class="display">
           <div class="workSpace2">
-            <form class="searchEmployeeForm">
-              <div class="form-group">
-                <div class="title">직원 목록</div>
-                <input
-                  type="text"
-                  class="search"
-                  placeholder="search"
-                  required
-                />
-                <div class="searchBtn">
-                  <div class="circle"><div class="innerCircle"></div></div>
-                  <div class="stripe"></div>
-                </div>
+            <div class="edit">
+              <div class="logo-EmployeeAdd" onClick="location.href='/'">
+                TIM DAYOFF
               </div>
-            </form>
 
-            <div class="annualList">
-              <div class="annualContainer">
-                <div class="nameTag">용환</div>
+              <div class="addTag">연차 수정하기</div>
+              <form class="add-post-form2" id="inputForm">
+                <div class="form-group-date-from">
+                  <div class="label">날짜</div>
+                  <input type="date" class="from" />
+                </div>
+                <div class="term">~</div>
+                <div class="form-group-date-to">
+                  <div class="label">날짜</div>
+                  <input type="date" class="to" />
+                </div>
+                <div class="total"></div>
+                <div class="totalAnnual">일</div>
+                <div class="deleteAnnualBtn" onClick="test2()">삭제</div>
                 <div
                   class="addAnnualBtn"
-                  onClick="location.href='/annualManagement-Add.html'"
+                  onClick="location.href='/annualManagement.html'"
                 >
-                  +
+                  저장
                 </div>
-                <div class="annuals">
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
+                <div
+                  class="closeAnnualBtn"
+                  onClick="location.href='/annualManagement.html'"
+                >
+                  닫기
                 </div>
-              </div>
-              <div class="annualContainer">
-                <div class="nameTag">용환</div>
-                <div class="annuals"><div class="annual"></div></div>
-              </div>
-              <div class="annualContainer">
-                <div class="nameTag">용환</div>
-                <div class="annuals"><div class="annual"></div></div>
-              </div>
-              <div class="annualContainer">
-                <div class="nameTag">용환</div>
-                <div class="annuals"><div class="annual"></div></div>
-              </div>
-              <div class="annualContainer">
-                <div class="nameTag">용환</div>
-                <div class="annuals"><div class="annual"></div></div>
-              </div>
-              <div class="annualContainer">
-                <div class="nameTag">용환</div>
-                <div class="annuals"><div class="annual"></div></div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
       <div class="footer"><div class="sign">Developed by 용환</div></div>
     </div>
+    <script src="/script.js"></script>
+    <script src="/yesOrno.js"></script>
+    <script src="randomstring.js"></script>
   </body>
 </html>

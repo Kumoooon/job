@@ -29,6 +29,7 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 300px;
   background-color: rgb(255, 255, 255);
+  text-align: center;
 }
 .content {
   position: relative;
@@ -43,11 +44,16 @@ body::-webkit-scrollbar {
   background-color: silver;
 }
 .menu {
+  display: flex;
   position: relative;
   width: 30%;
   background-color: rgb(249, 250, 251);
   box-sizing: border-box;
-  border-right: 1px dotted rgb(185, 185, 189);
+}
+@media (max-width: 1400px) {
+  .menu {
+    width: 15%;
+  }
 }
 .display {
   flex-grow: 1;
@@ -55,14 +61,30 @@ body::-webkit-scrollbar {
 .logo {
   display: inline-block;
   margin: 17px;
-  margin-left: 330px;
+  margin-left: 17%;
   font-size: 20px;
   color: rgba(20, 20, 20, 0.7);
   cursor: pointer;
 }
+.logo:hover {
+  color: #3b82f6;
+}
+@media (max-width: 1400px) {
+  .logo {
+    margin-left: 5%;
+  }
+}
+.logo-EmployeeAdd {
+  position: absolute;
+  top: 100px;
+  left: 140px;
+  font-size: 40px;
+  color: rgba(20, 20, 20, 0.7);
+  font-weight: lighter;
+}
 .information {
   position: absolute;
-  margin-left: 330px;
+  margin-left: 56%;
   top: 40px;
   left: 8px;
   background-color: rgb(249, 250, 251);
@@ -70,9 +92,15 @@ body::-webkit-scrollbar {
   font-weight: bold;
   color: RGBa(56, 66, 82, 0.9);
 }
+@media (max-width: 1400px) {
+  .information {
+    margin-left: 20%;
+  }
+}
 .aboutMe {
   position: absolute;
-  margin-left: 330px;
+  margin-left: 58%;
+  min-width: 24px;
   top: 90px;
   left: 20px;
   background-color: rgb(249, 250, 251);
@@ -87,9 +115,14 @@ body::-webkit-scrollbar {
   transform: translateY(-6px);
   transition-duration: 0.5s;
 }
+@media (max-width: 1400px) {
+  .aboutMe {
+    margin-left: 25%;
+  }
+}
 .management {
   position: absolute;
-  margin-left: 330px;
+  margin-left: 56%;
   top: 160px;
   left: 8px;
   background-color: rgb(249, 250, 251);
@@ -97,9 +130,14 @@ body::-webkit-scrollbar {
   font-weight: bold;
   color: RGBa(56, 66, 82, 0.9);
 }
+@media (max-width: 1400px) {
+  .management {
+    margin-left: 20%;
+  }
+}
 .employeeManagement {
   position: absolute;
-  margin-left: 330px;
+  margin-left: 58%;
   top: 210px;
   left: 20px;
   background-color: rgb(249, 250, 251);
@@ -108,6 +146,11 @@ body::-webkit-scrollbar {
   display: inline-block;
   cursor: pointer;
   transition: 0.2s;
+}
+@media (max-width: 1400px) {
+  .employeeManagement {
+    margin-left: 25%;
+  }
 }
 a:visited {
   text-decoration: none;
@@ -121,7 +164,7 @@ a:visited {
 
 .annualManagement {
   position: absolute;
-  margin-left: 330px;
+  margin-left: 58%;
   top: 250px;
   left: 20px;
   background-color: rgb(249, 250, 251);
@@ -130,20 +173,24 @@ a:visited {
   display: inline-block;
   cursor: pointer;
 }
+@media (max-width: 1400px) {
+  .annualManagement {
+    margin-left: 25%;
+  }
+}
 .annualManagement:hover {
   color: #3b82f6;
   transform: translateY(-6px);
   transition-duration: 0.5s;
 }
 .workSpace {
-  margin: 30px 350px 30px 30px;
+  margin: 30px 10% 30px 30px;
   height: 660px;
   width: 985px;
   box-sizing: border-box;
-  border: 1px dotted rgba(20, 20, 20, 0.2);
 }
 .workSpace2 {
-  margin: 30px 350px 30px 30px;
+  margin: 30px 10% 30px 30px;
   height: 660px;
   width: 985px;
   box-sizing: border-box;
@@ -227,7 +274,6 @@ input:focus {
   height: 35px;
   width: 35px;
   position: relative;
-  display: inline-box;
   left: 885px;
   bottom: 29px;
   background-color: rgb(249, 250, 251);
@@ -281,7 +327,30 @@ input:focus {
 .add {
   position: absolute;
   bottom: 5px;
-  left: 600px;
+  left: 32%;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  width: 920px;
+  height: 600px;
+  padding: 15px;
+  padding-left: 35px;
+  font-size: 17px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  transition: 0.2s;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+@media (max-width: 1400px) {
+  .add {
+    left: 19%;
+  }
+}
+.edit {
+  position: absolute;
+  bottom: 5px;
+  left: 32%;
   display: inline-block;
   background-color: rgb(255, 255, 255);
   width: 900px;
@@ -289,15 +358,34 @@ input:focus {
   padding: 15px;
   padding-left: 35px;
   font-size: 17px;
-  border-radius: 8px;
+  border-radius: 12px;
   font-weight: bold;
-  color: #3b82f6;
   font-family: "Spoqa Han Sans Neo", "sans-serif";
-  cursor: pointer;
   transition: 0.2s;
   margin-bottom: 40px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
+@media (max-width: 1400px) {
+  .edit {
+    left: 19%;
+  }
+}
+.introduce {
+  position: relative;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  width: 85%;
+  height: 600px;
+  padding: 15px;
+  padding-left: 35px;
+  font-size: 17px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  transition: 0.2s;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
 .form-group-FN {
   position: relative;
   display: inline-block;
@@ -305,6 +393,16 @@ input:focus {
 .form-group-LN {
   position: relative;
   display: inline-block;
+}
+.form-group-date-from {
+  position: relative;
+  display: inline-block;
+}
+.form-group-date-to {
+  position: relative;
+  display: inline-block;
+
+  margin-left: 60px;
 }
 .label-FirstName {
   position: relative;
@@ -327,23 +425,18 @@ input:focus {
 .add-post-form {
   display: inline-block;
   position: relative;
-  top: 150px;
-  background-color: #3b82f6;
+  top: 160px;
+  left: 400px;
 }
-.form-control-FN {
-  width: 200px;
-  height: 30px;
+.add-post-form2 {
+  display: inline-block;
+  position: relative;
+  top: 165px;
+  height: 450px;
+  left: 500px;
+  width: 400px;
+}
 
-  border: 1px solid RGBa(56, 66, 82, 0.2);
-  margin-left: 10px;
-  margin-top: 3px;
-  margin-bottom: 2px;
-  font-weight: 700;
-  outline: none;
-  font-size: 15px;
-  color: black;
-  border-radius: 5px;
-}
 .form-control {
   width: 200px;
   height: 30px;
@@ -370,14 +463,46 @@ input:focus {
   width: 90px;
   font-size: 16px;
   margin-top: 4px;
-  margin-left: 9px;
-  font-weight: bold;
+  margin-left: 15px;
+  font-weight: 500;
   color: white;
 }
-.exitBtn {
+.editlabel {
+  width: 90px;
+  font-size: 16px;
+  margin-top: 4px;
+  margin-left: 15px;
+  font-weight: 500;
+  color: #3b82f6;
+}
+
+.addEmployeeBtn {
   position: absolute;
-  left: 160px;
-  top: 480px;
+  left: 360px;
+  top: 380px;
+  width: 100px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s;
+  text-align: center;
+  color: rgba(20, 20, 20, 0.7);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.addEmployeeBtn:hover {
+  background-color: RGB(20, 133, 207);
+  color: white;
+}
+
+.closeEmployeeBtn {
+  position: absolute;
+  top: 380px;
+  left: 240px;
+
   width: 100px;
   height: 35px;
   border-radius: 6px;
@@ -385,22 +510,20 @@ input:focus {
   font-weight: bold;
   cursor: pointer;
   border: none;
-
   transition: 0.5s;
   text-align: center;
   padding-top: 15px;
   color: rgba(20, 20, 20, 0.7);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-.exitBtn:hover {
-  background-color: RGB(20, 133, 207);
-  color: white;
+.closeEmployeeBtn:hover {
+  background-color: rgb(80, 83, 85);
 }
-
-.editBtn {
+.deleteEmployeeBtn {
   position: absolute;
+  right: 220px;
 
-  left: 40px;
-  top: 480px;
+  top: 380px;
   width: 100px;
   height: 50px;
   border-radius: 6px;
@@ -408,17 +531,18 @@ input:focus {
   font-weight: bold;
   cursor: pointer;
   border: none;
-  color: rgba(20, 20, 20, 0.7);
-  background-color: rgb(255, 255, 255);
   transition: 0.5s;
+  text-align: center;
+  color: rgba(20, 20, 20, 0.7);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-.editBtn:hover {
+.deleteEmployeeBtn:hover {
   background-color: RGB(220, 83, 83);
 }
-.saveBtn {
+.deleteAnnualBtn {
+  top: 370px;
   position: absolute;
-  left: 160px;
-  top: 480px;
+  right: 310px;
   width: 100px;
   height: 35px;
   border-radius: 6px;
@@ -426,45 +550,76 @@ input:focus {
   font-weight: bold;
   cursor: pointer;
   border: none;
-
   transition: 0.5s;
   text-align: center;
   padding-top: 15px;
   color: rgba(20, 20, 20, 0.7);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-.saveBtn:hover {
-  background-color: RGB(20, 133, 207);
+.deleteAnnualBtn:hover {
+  background-color: RGB(220, 83, 83);
   color: white;
 }
-
-.closeBtn {
+.addAnnualBtn {
+  top: 370px;
   position: absolute;
-
-  left: 40px;
-  top: 480px;
+  left: 230px;
   width: 100px;
-  height: 50px;
+  height: 35px;
   border-radius: 6px;
   font-size: 13px;
   font-weight: bold;
   cursor: pointer;
   border: none;
-  color: rgba(20, 20, 20, 0.7);
-  background-color: rgb(255, 255, 255);
   transition: 0.5s;
+  text-align: center;
+  padding-top: 15px;
+  color: rgba(20, 20, 20, 0.7);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-.closeBtn:hover {
-  background-color: RGB(220, 83, 83);
+.addAnnualBtn:hover {
+  background-color: RGB(20, 133, 207);
+  color: white;
 }
-.vertical {
+.addAnnualMenu {
   position: absolute;
-  display: inline-block;
-  left: 150px;
-  height: 30px;
-  width: 1px;
-  background-color: RGBa(56, 66, 82, 0.2);
-  top: 490px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 18px;
+  width: 70px;
+  height: 52px;
+  border-radius: 8px;
+  border: 1px dotted #3b82f6;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
+.addAnnualMenu:hover {
+  background-color: #3b82f6;
+  color: rgb(255, 255, 255);
+}
+.closeAnnualBtn {
+  position: absolute;
+  left: 110px;
+  top: 370px;
+  width: 100px;
+  height: 35px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s;
+  text-align: center;
+  padding-top: 15px;
+  color: rgba(20, 20, 20, 0.7);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.closeAnnualBtn:hover {
+  background-color: rgb(80, 83, 85);
+}
+
 .form-day {
   height: 25px;
   width: 25px;
@@ -479,7 +634,8 @@ input:focus {
 .annualContainer {
   background-color: rgb(255, 255, 255);
   width: 834px;
-  height: 70px;
+  height: 72px;
+  overflow: hidden;
   padding: 15px;
   padding-top: 7px;
   padding-left: 170px;
@@ -511,22 +667,52 @@ input:focus {
   width: 80px;
   height: 80px;
   background-color: #3b82f6;
-  margin-left: 10px;
   border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s;
+}
+.annual:hover {
+  background-color: #124ead;
+  transform: translateY(-3px);
+  transition-duration: 0.5s;
+}
+.from-day {
+  left: 2px;
+  position: absolute;
+  top: 16px;
+  height: 20px;
+  width: 65px;
+  font-size: 12px;
+  color: black;
+}
+.day-term {
+  left: 36px;
+  position: absolute;
+  top: 31px;
+  height: 20px;
+  width: 65px;
+  font-size: 18px;
+  color: black;
+}
+.to-day {
+  position: absolute;
+  top: 52px;
+  left: 12px;
+  height: 20px;
+  width: 65px;
+  font-size: 12px;
+  color: black;
 }
 .annuals {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  overflow: hidden;
-  height: auto;
-  width: 550px;
   height: 80px;
+  width: 460px;
   position: relative;
   left: 165px;
-  border: 1px dotted silver;
+  gap: 10px;
 }
+
 .nameTag {
   position: absolute;
   display: inline-block;
@@ -536,22 +722,227 @@ input:focus {
   padding-top: 10px;
   right: 750px;
 }
-.addAnnualBtn {
-  width: 68px;
-  height: 48px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 8px;
-  cursor: pointer;
+
+.addTag {
   position: absolute;
-  left: 170px;
-  color: #3b82f6;
-  border: 1px dotted #3b82f6;
+  font-weight: lighter;
+  top: 200px;
+  left: 140px;
+  width: 210px;
+  height: 50px;
+  font-size: 27px;
+  color: rgba(20, 20, 20, 0.7);
+}
+.editTag {
+  position: absolute;
+  font-weight: lighter;
+  top: 200px;
+  left: 140px;
+  width: 210px;
+  height: 50px;
+  font-size: 27px;
+  color: rgba(20, 20, 20, 0.7);
+}
+.editAnnualTag {
+  position: absolute;
+  font-weight: lighter;
+  top: 200px;
+  left: 140px;
+  width: 220px;
+  height: 50px;
+  font-size: 27px;
+  color: rgba(20, 20, 20, 0.7);
+}
+
+.unFoldBtn {
+  position: relative;
+  display: inline-block;
+  left: 645px;
+  width: 50px;
+  height: 40px;
+  bottom: 65px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s;
+}
+.unFoldBtn:hover {
+  transform: translateY(15px);
+  transition-duration: 0.4s;
+}
+.degx {
+  position: absolute;
+  top: 8px;
+  width: 5px;
+  height: 22px;
+  left: 21px;
+  background-color: #3b82f6;
+  border-radius: 3px;
+}
+.degy {
+  position: absolute;
+  width: 5px;
+  top: 19px;
+  height: 16px;
+  left: 25px;
+  transform: rotate(45deg);
+  border-radius: 3px;
+
+  background-color: #3b82f6;
+}
+.degz {
+  top: 19px;
+  left: 16px;
+  border-radius: 3px;
+
+  position: absolute;
+  width: 5px;
+  height: 16px;
+  transform: rotate(-45deg);
+
+  background-color: #3b82f6;
+}
+
+.term {
+  position: absolute;
+  display: inline-block;
+  left: 163px;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  padding-top: 5px;
+  top: 15px;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.form-group-date-from {
+  position: absolute;
+  left: 50px;
+}
+
+.form-group-date-to {
+  position: absolute;
+  left: 150px;
+}
+.total {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+  top: 130px;
+  left: 250px;
+  border-bottom: 2px solid RGBa(56, 66, 82, 0.2);
+}
+.totalAnnual {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+  top: 127px;
+  left: 250px;
+  font-weight: lighter;
+  font-size: 25px;
+}
+.trigger {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  display: none;
+}
+
+.lg-text {
+  position: absolute;
+  top: 170px;
+  font-size: 40px;
+  margin-bottom: 50px;
+  font-family: "Nanum Brush Script", cursive;
+  color: rgb(34, 30, 30);
+  font-weight: bold;
+}
+#dynamic {
+  position: relative;
+  display: inline-block;
+}
+#dynamic::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 3px;
+  height: 90%;
+  background-color: rgb(34, 30, 30);
+}
+
+#dynamic.active::after {
+  display: none;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #3b82f6;
+}
+.introduce-title {
+  position: absolute;
+  display: inline-block;
+  top: 60px;
+  left: 30px;
+  font-size: 40px;
+  color: rgba(20, 20, 20, 0.7);
+  font-weight: lighter;
+}
+.introduce-subTitle {
+  position: absolute;
+  display: inline-block;
+  font-weight: lighter;
+  top: 75px;
+  left: 260px;
+  width: 300px;
+  height: 50px;
+  font-size: 25px;
+  color: rgba(20, 20, 20, 0.7);
+}
+.paper {
+  position: relative;
+  width: 785px;
+  height: 615px;
+  overflow: scroll;
+  left: 50px;
+}
+.paper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+.discriptionAboutDayoff {
+  position: relative;
+  width: 785px;
+  height: auto;
+  top: 130px;
+  padding-left: 35px;
+  font-size: 19px;
+  line-height: 50px;
+  font-weight: 400;
+  padding-right: 15px;
+}
+#editBtnPressed {
+  position: absolute;
+  padding-top: 15px;
+  left: 360px;
+  top: 380px;
+  width: 100px;
+  height: 35px;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
   transition: 0.5s;
   text-align: center;
-  padding-top: 20px;
-  top: 12px;
+  color: rgba(20, 20, 20, 0.7);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-.addAnnualBtn:hover {
-  background-color: #3b82f6;
+
+#editBtnPressed:hover {
+  background-color: RGB(20, 133, 207);
   color: white;
 }

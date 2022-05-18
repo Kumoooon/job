@@ -10,36 +10,42 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/4335224fc6.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>TIM DAYOFF</title>
   </head>
+  <div class="container">
   <body>
-    <div class="container">
       <div class="nav">
         <div class="logo" onClick="location.href='/'">TIM DAYOFF</div>
       </div>
-      <div class="header"></div>
       <div class="content">
+      <div class="header"><p id="dynamic" class="lg-text"></p></div>
         <div class="menu">
           <div class="information">소개</div>
           <div class="aboutMe" onClick="location.href='/aboutMe.html'">
-            + About DAYOFF
+            + About ME
           </div>
           <div class="management">메뉴</div>
           <div
             class="employeeManagement"
             onClick="location.href='/employeeManagement.html'"
           >
-            + 직원관리
+            + 직원 관리
           </div>
           <div
             class="annualManagement"
             onClick="location.href='/annualManagement.html'"
           >
-            + 연차관리
+            + 연차 관리
           </div>
         </div>
         <div class="display">
@@ -61,10 +67,11 @@
             </form>
 
             <div class="annualList">
+              <div class="consent"></div>
               <div class="annualContainer">
-                <div class="nameTag">용환</div>
+                <div class="nameTag">김지인</div>
                 <div
-                  class="addAnnualBtn"
+                  class="addAnnualMenu"
                   onClick="location.href='/annualManagement-Add.html'"
                 >
                   +
@@ -73,37 +80,122 @@
                   <div
                     class="annual"
                     onClick="location.href='/annualManagement-Edit.html'"
-                  ></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
-                  <div class="annual"></div>
+                  >
+                    <div class="from-day">2022.05.16</div>
+                    <div class="day-term">~</div>
+                    <div class="to-day">2022.05.17</div>
+                  </div>
+                  <div
+                    class="annual"
+                    onClick="location.href='/annualManagement-Edit.html'"
+                  >
+                    <div class="from-day">2022.06.01</div>
+                    <div class="day-term">~</div>
+                    <div class="to-day">2022.06.03</div>
+                  </div>
+                  <div
+                    class="annual"
+                    onClick="location.href='/annualManagement-Edit.html'"
+                  >
+                    <div class="from-day">2022.06.06</div>
+                    <div class="day-term">~</div>
+                    <div class="to-day">2022.06.09</div>
+                  </div>
+                  <div
+                    class="annual"
+                    onClick="location.href='/annualManagement-Edit.html'"
+                  >
+                    <div class="from-day">2022.06.20</div>
+                    <div class="day-term">~</div>
+                    <div class="to-day">2022.06.23</div>
+                  </div>
+                  <div
+                    class="annual"
+                    onClick="location.href='/annualManagement-Edit.html'"
+                  >
+                    <div class="from-day">2022.07.16</div>
+                    <div class="day-term">~</div>
+                    <div class="to-day">2022.07.17</div>
+                  </div>
+                  <div
+                    class="annual"
+                    onClick="location.href='/annualManagement-Edit.html'"
+                  >
+                    <div class="from-day">2022.08.16</div>
+                    <div class="day-term">~</div>
+                    <div class="to-day">2022.08.17</div>
+                  </div>
+                </div>
+
+                <div class="unFoldBtn" id="unFoldBtn">
+                  <div class="degx" id="unFoldBtn"></div>
+                  <div class="degy" id="unFoldBtn"></div>
+                  <div class="degz" id="unFoldBtn"></div>
                 </div>
               </div>
               <div class="annualContainer">
-                <div class="nameTag">용환</div>
-                <div class="annuals"><div class="annual"></div></div>
+                <div class="nameTag">김인수</div>
+                <div
+                  class="addAnnualMenu"
+                  onClick="location.href='/annualManagement-Add.html'"
+                >
+                  +
+                </div>
+                <div class="annuals">
+                  <div
+                    class="annual"
+                    onClick="location.href='/annualManagement-Edit.html'"
+                  >
+                    <div class="from-day">2022.05.16</div>
+                    <div class="day-term">~</div>
+                    <div class="to-day">2022.05.17</div>
+                  </div>
+                  <div
+                    class="annual"
+                    onClick="location.href='/annualManagement-Edit.html'"
+                  >
+                    <div class="from-day">2022.06.16</div>
+                    <div class="day-term">~</div>
+                    <div class="to-day">2022.06.17</div>
+                  </div>
+                </div>
+                <div class="unFoldBtn">
+                  <div class="degx"></div>
+                  <div class="degy"></div>
+                  <div class="degz"></div>
+                </div>
               </div>
               <div class="annualContainer">
-                <div class="nameTag">용환</div>
-                <div class="annuals"><div class="annual"></div></div>
-              </div>
-              <div class="annualContainer">
-                <div class="nameTag">용환</div>
-                <div class="annuals"><div class="annual"></div></div>
-              </div>
-              <div class="annualContainer">
-                <div class="nameTag">용환</div>
-                <div class="annuals"><div class="annual"></div></div>
-              </div>
-              <div class="annualContainer">
-                <div class="nameTag">용환</div>
-                <div class="annuals"><div class="annual"></div></div>
+                <div class="nameTag">손병준</div>
+                <div
+                  class="addAnnualMenu"
+                  onClick="location.href='/annualManagement-Add.html'"
+                >
+                  +
+                </div>
+                <div class="annuals">
+                  <div
+                    class="annual"
+                    onClick="location.href='/annualManagement-Edit.html'"
+                  >
+                    <div class="from-day">2022.05.16</div>
+                    <div class="day-term">~</div>
+                    <div class="to-day">2022.05.17</div>
+                  </div>
+                  <div
+                    class="annual"
+                    onClick="location.href='/annualManagement-Edit.html'"
+                  >
+                    <div class="from-day">2022.06.16</div>
+                    <div class="day-term">~</div>
+                    <div class="to-day">2022.06.17</div>
+                  </div>
+                </div>
+                <div class="unFoldBtn">
+                  <div class="degx"></div>
+                  <div class="degy"></div>
+                  <div class="degz"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -111,5 +203,8 @@
       </div>
       <div class="footer"><div class="sign">Developed by 용환</div></div>
     </div>
+    <script src="randomstring.js"></script>
+    <script src="/foldAndSpreadBtn.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

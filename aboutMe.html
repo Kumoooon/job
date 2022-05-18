@@ -10,39 +10,103 @@
       rel="stylesheet"
       type="text/css"
     />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>TIM DAYOFF</title>
   </head>
   <body>
     <div class="container">
       <div class="nav">
         <div class="logo"><a href="/index.html">TIM DAYOFF</a></div>
       </div>
-      <div class="header"></div>
+      <div class="header"><p id="dynamic" class="lg-text"></p></div>
       <div class="content">
         <div class="menu">
           <div class="information">소개</div>
           <div class="aboutMe" onClick="location.href='/aboutMe.html'">
-            + About DAYOFF
+            + About ME
           </div>
           <div class="management">메뉴</div>
+
           <div
             class="employeeManagement"
             onClick="location.href='/employeeManagement.html'"
           >
-            + 직원관리
+            + 직원 관리
           </div>
           <div
             class="annualManagement"
             onClick="location.href='/annualManagement.html'"
           >
-            + 연차관리
+            + 연차 관리
           </div>
         </div>
         <div class="display">
-          <div class="workSpace"></div>
+          <div class="workSpace">
+            <div class="introduce">
+              <div class="paper">
+                <div class="introduce-title">TIM DAYOFF</div>
+                <div class="introduce-subTitle">- 직원·연차 관리 웹사이트</div>
+                <br />
+                <br />
+                <br />
+                <p class="discriptionAboutDayoff">
+                  HTML과 JavaScript, Css를 사용하여 CRUD를 구현한
+                  웹사이트입니다.<br />
+                  CRUD란 Create, Read, Update, Delete의 앞 글자를 딴 단어로,
+                  <br />웹상에서 데이터의 생성, 읽기, 수정, 삭제의 구현을
+                  말합니다.
+                  <br />
+                  <br />
+                  <img src="/menu1.png" />
+                  <br />
+                  '+직원 관리' 에서 직원의 생성, 읽기, 수정, 삭제를,
+                  <br />
+                  '+연차 관리' 에서 연차의 생성, 읽기, 수정, 삭제를 구현할
+                  예정입니다.
+                  <img src="/employeeList.png" />
+                  <br />
+                  직원 관리 화면입니다. + 메뉴를 통해 직원을 생성하고,
+                  <br />
+                  아래 목록 중 하나를 클릭하여 직원의 정보를 열람, 수정 및
+                  삭제할 수 있게끔 할 것입니다. <br />아직은 제 정보만 출력되는
+                  점 양해 부탁드립니다.
+                  <br />
+                  우측 상단의 커서에 직원의 이름을 입력하면 해당 직원의 정보만
+                  나타나도록 개발할 예정입니다. <img src="/annualList.png" />
+                  <br />
+                  연차 관리 화면입니다. +메뉴를 통해 연차를 생성하고,
+                  <br />
+                  우측의 파란 사각형 중 하나를 클릭하여 연차의 정보를 열람, 수정
+                  및 삭제할 수 있게끔 할 것입니다.
+
+                  <br />
+                  <img src="/arrow.png" />
+                  <br />
+                  맨 끝에 위치한 화살표를 클릭하여 각 직원의 모든 연차를 표시할
+                  수 있습니다. <br />한 줄에는 다섯 개의 연차가 표시되며,
+                  초과하는 연차는 다음 줄로 넘어갑니다.
+                  <br />
+                  직원 관리 화면과 마찬가지로 우측 상단의 커서에 직원의 이름을
+                  입력하면 <br />해당 직원의 정보만 나타나도록 개발할
+                  예정입니다.
+                  <br />
+                  <br />
+                  <img src="/close.png" />
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer"><div class="sign">Developed by 용환</div></div>
+      <div class="footer">
+        <div class="sign">Developed by 용환</div>
+      </div>
     </div>
+    <script src="randomstring.js"></script>
   </body>
 </html>

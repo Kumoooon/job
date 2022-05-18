@@ -10,47 +10,57 @@
       rel="stylesheet"
       type="text/css"
     />
-
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>TIM DAYOFF</title>
   </head>
   <body>
     <div class="container">
       <div class="nav">
         <div class="logo" onClick="location.href='/'">TIM DAYOFF</div>
       </div>
-      <div class="header"></div>
+      <div class="header"><p id="dynamic" class="lg-text"></p></div>
       <div class="content">
         <div class="menu">
           <div class="information">소개</div>
           <div class="aboutMe" onClick="location.href='/aboutMe.html'">
-            + About DAYOFF
+            + About Me
           </div>
           <div class="management">메뉴</div>
           <div
             class="employeeManagement"
             onClick="location.href='/employeeManagement.html'"
           >
-            + 직원관리
+            + 직원 관리
           </div>
           <div
             class="annualManagement"
             onClick="location.href='/annualManagement.html'"
           >
-            + 연차관리
+            + 연차 관리
           </div>
         </div>
         <div class="display">
           <div class="workSpace2">
             <div class="add">
+              <div class="logo-EmployeeAdd" onClick="location.href='/'">
+                TIM DAYOFF
+              </div>
+
+              <div class="addTag">직원정보 등록하기</div>
               <form class="add-post-form" id="inputForm">
                 <div class="form-group-FN">
                   <div class="label" id="firstName">성</div>
                   <input
                     type="text"
                     class="form-control"
-                    id="name"
+                    id="firstname"
                     placeholder="성"
-                    onclick="fontApearFN()"
+                    onfocus="fontApearFN()"
                     required
                   />
                 </div>
@@ -59,9 +69,9 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="name"
+                    id="lastname"
                     placeholder="이름"
-                    onclick="fontApearLN()"
+                    onfocus="fontApearLN()"
                     required
                   />
                 </div>
@@ -70,17 +80,20 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="position"
-                    onclick="fontApearPS()"
+                    id="Position"
+                    placeholder="직급"
+                    onfocus="fontApearPS()"
                     required
                   />
                 </div>
                 <div class="form-group">
-                  <div class="label" id="annual">전체 연차</div>
+                  <div class="label" id="annual">총 연차</div>
                   <input
                     type="integer"
                     class="form-control"
-                    onclick="fontApearAN()"
+                    id="totalannual"
+                    placeholder="총 연차"
+                    onfocus="fontApearAN()"
                     required
                   />
                   <div class="form-day">일</div>
@@ -90,7 +103,9 @@
                   <input
                     type="integer"
                     class="form-control"
-                    onclick="fontApearNU()"
+                    id="phonenumber"
+                    placeholder="연락처"
+                    onfocus="fontApearNU()"
                     required
                   />
                 </div>
@@ -99,24 +114,20 @@
                   <input
                     type="integer"
                     class="form-control"
-                    onclick="fontApearEM()"
+                    id="eemail"
+                    placeholder="E-Mail"
+                    onfocus="fontApearEM()"
                     required
                   />
                 </div>
 
+                <button class="addEmployeeBtn">저장</button>
                 <div
-                  class="saveBtn"
-                  onClick="location.href='/employeeManagement.html'"
-                >
-                  저장
-                </div>
-                <div class="vertical"></div>
-                <button
-                  class="closeBtn"
+                  class="closeEmployeeBtn"
                   onClick="location.href='/employeeManagement.html'"
                 >
                   닫기
-                </button>
+                </div>
               </form>
             </div>
           </div>
@@ -124,6 +135,8 @@
       </div>
       <div class="footer"><div class="sign">Developed by 용환</div></div>
     </div>
+    <script src="randomstring.js"></script>
     <script src="/script.js"></script>
+    <script src="/addemployee.js"></script>
   </body>
 </html>
